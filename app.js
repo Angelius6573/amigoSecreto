@@ -23,7 +23,6 @@ let names = [];
 
         function updateNamesList() {
             const namesList = document.getElementById('namesList');
-            
             if (names.length === 0) {
                 namesList.innerHTML = '<div class="empty-message">Agrega nombres para comenzar el sorteo</div>';
             } else {
@@ -34,11 +33,19 @@ let names = [];
                     </span>`
                 ).join('');
             }
+            const clearBtn = document.querySelector('.clear-btn');
+            if (clearBtn) {
+                clearBtn.disabled = names.length === 0;
+            }
         }
 
         function updateDrawButton() {
             const drawBtn = document.getElementById('drawBtn');
+            const clearBtn = document.querySelector('.clear-btn');
             drawBtn.disabled = names.length < 2;
+            if (clearBtn) {
+                clearBtn.disabled = names.length === 0;
+            }
         }
 
         function drawName() {
@@ -50,7 +57,6 @@ let names = [];
             drawBtn.disabled = true;
             if (clearBtn) clearBtn.disabled = true;
 
-            // Mostrar caja "Eligiendo ganador..."
             resultSection.innerHTML = '<div class="choosing-box"><span id="choosingText">Eligiendo ganador</span><span id="dots"></span></div>';
 
             let dots = 0;
@@ -63,7 +69,6 @@ let names = [];
                 if (dots === 0) cycles++;
                 if (cycles === maxCycles) {
                     clearInterval(interval);
-                    // Elegir ganador
                     const randomIndex = Math.floor(Math.random() * names.length);
                     const winner = names[randomIndex];
                     resultSection.innerHTML = `
@@ -74,7 +79,6 @@ let names = [];
                     `;
                     isDrawing = false;
                     drawBtn.disabled = false;
-                    // Desactivar evento de eliminar nombres
                     const removeBtns = document.querySelectorAll('.remove-btn');
                     removeBtns.forEach(btn => {
                         btn.disabled = true;
@@ -93,7 +97,6 @@ let names = [];
             document.getElementById('resultSection').innerHTML = '';
         }
 
-        // Permitir agregar nombres con Enter
         document.getElementById('nameInput').addEventListener('keypress', function(e) {
             if (e.key === 'Enter') {
                 addName();
