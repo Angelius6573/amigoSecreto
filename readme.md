@@ -20,4 +20,4 @@ Este proyecto es una aplicación web para realizar sorteos de "Amigo Secreto" de
 ¡Disfruta tu sorteo de Amigo Secreto!
 
 
-# PD: Eh usado IA para colocar la animación de las lupas, espero no les moleste :D
+### PD: Eh usado IA para colocar la animación de las lupas, espero no les moleste :D
