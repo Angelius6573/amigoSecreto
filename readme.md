@@ -1,26 +1,47 @@
-# Amigo Secreto
+# 🎁 Amigo Secreto Web 🎉
 
-Este proyecto es una aplicación web para realizar sorteos de "Amigo Secreto" de manera sencilla y visual.
-
-## ¿Cómo usar?
-
-1. **Agrega los nombres** de los participantes en el campo de texto y presiona "Agregar" o la tecla Enter. Puedes agregar tantos nombres como quieras, pero se requieren al menos dos para sortear.
-2. Los nombres aparecerán en la lista central. Puedes eliminar un nombre antes del sorteo haciendo clic en la "x" junto a cada nombre.
-3. Cuando todos los nombres estén listos, haz clic en el botón **"Sortear"**. Aparecerá una animación de "Eligiendo ganador..." y, tras unos segundos, se mostrará el ganador.
-4. Una vez mostrado el ganador, ya no podrás eliminar nombres individuales. Para reiniciar el sorteo, presiona el botón **"Limpiar"**.
-
-## Características
-- Animaciones visuales en los laterales.
-- Efecto arcoiris animado en el título.
-- Interfaz moderna y responsiva.
-- Proceso de sorteo con animación de espera.
+> ¡Haz tu sorteo de Amigo Secreto con estilo, color y diversión! 🕵️‍♂️✨
 
 ---
 
-¡Disfruta tu sorteo de Amigo Secreto!
+## ¿Qué es esto?
 
+Una aplicación web interactiva para organizar sorteos de Amigo Secreto. ¡Olvídate de los papelitos y deja que la magia (y la tecnología) decidan por ti!
 
+---
 
+## 🚦 ¿Cómo se usa?
 
+1. **Agrega los nombres** de los participantes en el campo de texto y presiona "Agregar" o la tecla Enter. Puedes añadir tantos como quieras (¡pero mínimo dos para que haya misterio!).
+2. Los nombres aparecerán en la lista central. Si te arrepientes de algún nombre, puedes eliminarlo antes del sorteo haciendo clic en la "x".
+3. Cuando todos estén listos, haz clic en **"Sortear"**. Verás una animación de "Eligiendo ganador..." con suspenso incluido.
+4. ¡Tarán! El ganador aparece en una caja dorada. Ya no podrás eliminar nombres hasta que limpies la lista.
+5. ¿Quieres volver a jugar? Presiona **"Limpiar"** y empieza de nuevo.
 
-PD: Eh usado IA para colocar la animación de las lupas, espero no les moleste :D
+---
+
+## ✨ Características destacadas
+
+- Animaciones de lupas rebotando en los laterales (¡hechas con IA y mucho cariño!).
+- Título con efecto arcoiris animado 🌈.
+- Interfaz moderna, responsiva y fácil de usar.
+- Proceso de sorteo con animación de espera y puntos suspensivos "pensando".
+- ¡Sin papelitos, sin trampas, solo diversión!
+
+---
+
+## 🛠️ ¿Cómo lo uso?
+
+1. Descarga o clona este repositorio.
+2. Abre el archivo `index.html` en tu navegador favorito.
+3. ¡Listo! No necesitas instalar nada más.
+
+---
+
+## 🤖 Nota especial
+
+Las animaciones de las lupas fueron sugeridas y generadas con ayuda de IA. ¡Espero que te diviertan tanto como a mí! 😄
+
+---
+
+¡Disfruta tu sorteo de Amigo Secreto y que la suerte esté de tu lado! 🍀
