@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo Secreto</title>
+    <link rel="stylesheet" href="c.css">
+</head>
+<body>
+    <div class="main-layout">
+        <div class="side-animation-group">
+            <div class="side-animation left">
+                <div class="magnifier-animation">
+                    <svg width="60" height="60" viewBox="0 0 60 60">
+                        <circle cx="27" cy="27" r="18" stroke="#667eea" stroke-width="6" fill="#fff"/>
+                        <rect x="38" y="38" width="12" height="6" rx="3" fill="#764ba2" transform="rotate(45 44 41)"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="side-animation left-alt">
+                <div class="magnifier-animation reverse">
+                    <svg width="60" height="60" viewBox="0 0 60 60">
+                        <circle cx="27" cy="27" r="18" stroke="#667eea" stroke-width="6" fill="#fff"/>
+                        <rect x="38" y="38" width="12" height="6" rx="3" fill="#764ba2" transform="rotate(45 44 41)"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Amigo Secreto</h1>
+            <div class="input-section">
+                <input type="text" class="name-input" id="nameInput" placeholder="Escribe un nombre..." maxlength="30">
+                <button class="add-btn" onclick="addName()">Agregar</button>
+            </div>
+            <div class="names-list" id="namesList">
+                <div class="empty-message">Agrega nombres para comenzar el sorteo</div>
+            </div>
+            <div>
+                <button class="draw-btn" id="drawBtn" onclick="drawName()" disabled>🎯 Sortear</button>
+                <button class="clear-btn" onclick="clearAll()">🗑️ Limpiar</button>
+            </div>
+            <div class="result-section" id="resultSection"></div>
+        </div>
+        <div class="side-animation-group">
+            <div class="side-animation right">
+                <div class="magnifier-animation">
+                    <svg width="60" height="60" viewBox="0 0 60 60">
+                        <circle cx="27" cy="27" r="18" stroke="#667eea" stroke-width="6" fill="#fff"/>
+                        <rect x="38" y="38" width="12" height="6" rx="3" fill="#764ba2" transform="rotate(45 44 41)"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="side-animation right-alt">
+                <div class="magnifier-animation reverse">
+                    <svg width="60" height="60" viewBox="0 0 60 60">
+                        <circle cx="27" cy="27" r="18" stroke="#667eea" stroke-width="6" fill="#fff"/>
+                        <rect x="38" y="38" width="12" height="6" rx="3" fill="#764ba2" transform="rotate(45 44 41)"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="amigoSecreto.js"></script>
+</body>
+</html>
